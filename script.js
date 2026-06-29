@@ -11,7 +11,7 @@
   // =============================================
   // ÖNEMLİ: Aşağıdaki URL'yi kendi Google Apps Script Web App URL'nizle değiştirin.
   // README.md dosyasındaki kurulum adımlarını takip edin.
-  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw179jjiwVwsQ0GS6OIH-QDLozclw_U96bLVpYbQ-L0H3i0GWcMu9fevLRIMfJg98Qr/exec';
+  const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycby77VJz4bw3HAdK0O788ft3ysoFt6CzEMO_yf_wk8CM0QJASu8oGylzW4a6o5C7CvSxog/exec';
 
   // =============================================
   // DOM ELEMENTS
