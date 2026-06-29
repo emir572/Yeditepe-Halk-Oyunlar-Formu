@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO -->
+  <title>Ön Kayıt Formu — Yeditepe Folklor Eğitim Merkezi</title>
+  <meta name="description" content="Yeditepe Folklor Eğitim Merkezi Gençlik Merkezi ve Spor Kulübü Derneği — Ön Kayıt Formu. Halk oyunları derslerine katılmak için hemen kayıt olun.">
+  <meta name="author" content="Yeditepe Folklor Eğitim Merkezi">
+  <meta name="theme-color" content="#fe0049">
+  <meta name="msapplication-TileColor" content="#fe0049">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yeditepe Folklor — Ön Kayıt Formu">
+  <meta property="og:description" content="Yeditepe Folklor Eğitim Merkezi halk oyunları derslerine ön kayıt formu.">
+  <meta property="og:image" content="https://www.yeditepefolklor.com/image/yeditepe.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="https://www.yeditepefolklor.com/image/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://www.yeditepefolklor.com/image/icon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.yeditepefolklor.com/image/icon/apple-touch-icon.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="page-background"></div>
+
+  <!-- Decorative Particles -->
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+
+  <!-- Main Container -->
+  <main class="form-container">
+
+    <!-- Header -->
+    <header class="form-header">
+      <a href="https://www.yeditepefolklor.com/" target="_blank" rel="noopener">
+        <img src="https://www.yeditepefolklor.com/image/logo-x.png" alt="Yeditepe Folklor Logo" class="logo">
+      </a>
+      <h1>Yeditepe Ön Kayıt Formu</h1>
+      <p class="subtitle">Yeditepe Halk Oyunları Spor Kulübü</p>
+      <div class="divider"></div>
+    </header>
+
+    <!-- Form Card -->
+    <div class="form-card">
+      <!-- Corner Logos -->
+      <div class="corner-logo corner-left">
+        <img src="7tepe.jpeg" alt="Yeditepe Logo">
+      </div>
+      <div class="corner-logo corner-right">
+        <img src="7tepe.jpeg" alt="Yeditepe Logo">
+      </div>
+
+      <!-- Form Content -->
+      <div class="form-card-inner" id="formContent">
+        <p class="required-note">
+          <span class="asterisk">*</span> Zorunlu soruyu belirtir
+        </p>
+
+        <form id="onKayitForm" novalidate>
+
+          <!-- 1. Ad Soyad -->
+          <div class="form-group" id="group-adsoyad">
+            <label for="adsoyad">Adınız Soyadınız <span class="required">*</span></label>
+            <input type="text" class="form-input" id="adsoyad" name="adsoyad" placeholder="Yanıtınız" autocomplete="name" required>
+            <div class="error-message" id="error-adsoyad">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Lütfen adınızı ve soyadınızı girin.</span>
+            </div>
+          </div>
+
+          <hr class="form-separator">
+
+          <!-- 2. E-posta -->
+          <div class="form-group" id="group-eposta">
+            <label for="eposta">E-posta Adresiniz <span class="required">*</span></label>
+            <input type="email" class="form-input" id="eposta" name="eposta" placeholder="ornek@mail.com" autocomplete="email" required>
+            <div class="error-message" id="error-eposta">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Lütfen geçerli bir e-posta adresi girin.</span>
+            </div>
+          </div>
+
+          <hr class="form-separator">
+
+          <!-- 3. Doğum Tarihi -->
+          <div class="form-group" id="group-dogumtarihi">
+            <label for="dogumtarihi">Doğum Tarihiniz <span class="required">*</span></label>
+            <input type="date" class="form-input" id="dogumtarihi" name="dogumtarihi" required>
+            <div class="error-message" id="error-dogumtarihi">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Lütfen doğum tarihinizi seçin.</span>
+            </div>
+          </div>
+
+          <hr class="form-separator">
+
+          <!-- 3. Cinsiyet -->
+          <div class="form-group" id="group-cinsiyet">
+            <label>Cinsiyetiniz <span class="required">*</span></label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" id="cinsiyet-kadin" name="cinsiyet" value="Kadın" required>
+                <label for="cinsiyet-kadin" class="radio-label">
+                  <span class="radio-dot"></span>
+                  Kadın
+                </label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="cinsiyet-erkek" name="cinsiyet" value="Erkek">
+                <label for="cinsiyet-erkek" class="radio-label">
+                  <span class="radio-dot"></span>
+                  Erkek
+                </label>
+              </div>
+            </div>
+            <div class="error-message" id="error-cinsiyet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Lütfen cinsiyetinizi seçin.</span>
+            </div>
+          </div>
+
+          <hr class="form-separator">
+
+          <!-- 4. Telefon -->
+          <div class="form-group" id="group-telefon">
+            <label for="telefon">Telefon Numaranız <span class="required">*</span></label>
+            <input type="tel" class="form-input" id="telefon" name="telefon" placeholder="0(5XX) XXX XX XX" autocomplete="tel" required>
+            <div class="error-message" id="error-telefon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Lütfen geçerli bir telefon numarası girin.</span>
+            </div>
+          </div>
+
+          <hr class="form-separator">
+
+          <!-- 5. Adres -->
+          <div class="form-group" id="group-adres">
+            <label for="adres">Adres <span class="field-hint">(Semt yazmanız yeterlidir.)</span></label>
+            <input type="text" class="form-input" id="adres" name="adres" placeholder="Yanıtınız" autocomplete="address-level2">
+          </div>
+
+          <hr class="form-separator">
+
+          <!-- 6. Tecrübe -->
+          <div class="form-group" id="group-tecrube">
+            <label>Tecrübeniz <span class="required">*</span></label>
+            <div class="radio-group">
+              <div class="radio-option">
+                <input type="radio" id="tecrube-yok" name="tecrube" value="Hiç eğitim almadım" required>
+                <label for="tecrube-yok" class="radio-label">
+                  <span class="radio-dot"></span>
+                  Hiç eğitim almadım.
+                </label>
+              </div>
+              <div class="radio-option">
+                <input type="radio" id="tecrube-var" name="tecrube" value="Daha önce eğitim aldım">
+                <label for="tecrube-var" class="radio-label">
+                  <span class="radio-dot"></span>
+                  Daha önce eğitim aldım.
+                </label>
+              </div>
+            </div>
+            <div class="error-message" id="error-tecrube">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Lütfen tecrübenizi seçin.</span>
+            </div>
+          </div>
+
+          <hr class="form-separator">
+
+          <!-- 7. Eğitim Aldığı Yöreler -->
+          <div class="form-group" id="group-yoreler">
+            <label for="egitim-yoreleri">Eğitim aldığınız yöre isimleri nelerdir?</label>
+            <input type="text" class="form-input" id="egitim-yoreleri" name="egitim_yoreleri" placeholder="Yanıtınız">
+          </div>
+
+          <!-- Submit -->
+          <div class="submit-section">
+            <button type="submit" class="submit-btn" id="submitBtn">
+              <span>
+                <span class="btn-text">Gönder</span>
+                <div class="spinner"></div>
+              </span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Success Screen -->
+      <div class="success-screen" id="successScreen">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24">
+            <polyline points="6 12 10 16 18 8"/>
+          </svg>
+        </div>
+        <h2>Teşekkürler!</h2>
+        <p>Ön kaydınız başarıyla alınmıştır. En kısa sürede sizinle iletişime geçeceğiz.</p>
+        <a href="https://www.yeditepefolklor.com/" class="back-link" target="_blank" rel="noopener">
+          Web sitemizi ziyaret edin
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="form-footer">
+      <p>© 2026 Yeditepe Folklor Eğitim Merkezi — Tüm hakları saklıdır.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/yeditepefolklor/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@yeditepefolklor" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
+        </a>
+        <a href="tel:+905309525345" aria-label="Telefon">
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
