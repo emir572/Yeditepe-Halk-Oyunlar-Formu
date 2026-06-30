@@ -43,9 +43,82 @@
 
     <!-- Header -->
     <header class="form-header">
-      <a href="https://www.yeditepefolklor.com/" target="_blank" rel="noopener">
-        <img src="https://www.yeditepefolklor.com/image/logo-x.png" alt="Yeditepe Folklor Logo" class="logo">
-      </a>
+      <!-- Custom Header Logo (SVG) -->
+      <div class="header-logo-wrapper">
+        <svg class="header-logo-svg" viewBox="0 -15 380 145" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yeditepe Halk Oyunları Logo">
+          <defs>
+            <linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e8831c"/>
+              <stop offset="100%" stop-color="#c86a14"/>
+            </linearGradient>
+            <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#d47728"/>
+              <stop offset="100%" stop-color="#f0a040"/>
+            </linearGradient>
+            <linearGradient id="logoGrad3" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#c46018"/>
+              <stop offset="100%" stop-color="#e8931c"/>
+            </linearGradient>
+            <filter id="logoGlow">
+              <feGaussianBlur stdDeviation="1.5" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+
+          <g filter="url(#logoGlow)">
+            <!-- ===== Y FIGURE (x=55) — Arms up in V shape ===== -->
+            <circle cx="55" cy="18" r="7" fill="url(#logoGrad1)"/>
+            <path d="M55 25 L55 58" stroke="url(#logoGrad1)" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M55 34 Q42 20 33 10" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M55 34 Q68 20 77 10" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M55 58 Q49 68 42 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M55 58 Q64 66 72 72" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+            <!-- Halay connection Y → T -->
+            <path d="M77 10 Q93 22 105 34" stroke="url(#logoGrad2)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.55"/>
+
+            <!-- ===== T FIGURE (x=140) — Arms horizontal ===== -->
+            <circle cx="140" cy="18" r="7" fill="url(#logoGrad1)"/>
+            <path d="M140 25 L140 58" stroke="url(#logoGrad1)" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M140 34 Q124 32 105 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M140 34 Q160 32 183 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M140 58 Q134 68 127 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M140 58 Q148 66 156 72" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+            <!-- ===== H FIGURE (x=225) — Wide stance + crossbar ===== -->
+            <circle cx="225" cy="18" r="7" fill="url(#logoGrad1)"/>
+            <path d="M225 25 L225 58" stroke="url(#logoGrad1)" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M225 34 Q208 32 183 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M225 34 Q244 32 268 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M210 46 L240 46" stroke="url(#logoGrad2)" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M225 58 Q213 68 200 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M225 58 Q237 68 250 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+            <!-- ===== O FIGURE (x=310) — Arms form circle above head ===== -->
+            <circle cx="310" cy="18" r="7" fill="url(#logoGrad1)"/>
+            <path d="M310 25 L310 58" stroke="url(#logoGrad1)" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M302 34 Q286 32 268 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M318 34 C348 -8 272 -8 302 34" stroke="url(#logoGrad2)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M310 58 Q303 68 296 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <path d="M310 58 Q318 66 326 72" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+            <!-- Decorative energy dots -->
+            <circle cx="30" cy="6" r="2" fill="#f0a040" opacity="0.65"/>
+            <circle cx="80" cy="4" r="1.5" fill="#e8831c" opacity="0.45"/>
+            <circle cx="345" cy="10" r="2" fill="#f0a040" opacity="0.65"/>
+            <circle cx="268" cy="6" r="1.5" fill="#e8831c" opacity="0.45"/>
+          </g>
+
+          <!-- Text -->
+          <text x="190" y="105" text-anchor="middle" font-family="Poppins, sans-serif" font-size="26" font-weight="700" fill="url(#logoGrad2)" letter-spacing="2">
+            Yeditepe
+          </text>
+          <line x1="108" y1="113" x2="272" y2="113" stroke="url(#logoGrad2)" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
+        </svg>
+      </div>
       <h1>Yeditepe Ön Kayıt Formu</h1>
       <p class="subtitle">Yeditepe Halk Oyunları Kulübü</p>
       <div class="divider"></div>
@@ -207,8 +280,8 @@
         </div>
         <h2>Teşekkürler!</h2>
         <p>Ön kaydınız başarıyla alınmıştır. En kısa sürede sizinle iletişime geçeceğiz.</p>
-        <a href="https://www.yeditepefolklor.com/" class="back-link" target="_blank" rel="noopener">
-          Web sitemizi ziyaret edin
+        <a href="https://www.instagram.com/yeditepe.halkoyunlari/" class="back-link" target="_blank" rel="noopener">
+          Instagram'da takip edin
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
         </a>
       </div>
@@ -219,13 +292,10 @@
     <footer class="form-footer">
       <p>© 2026 Yeditepe Folklor Eğitim Merkezi — Tüm hakları saklıdır.</p>
       <div class="social-links">
-        <a href="https://www.instagram.com/yeditepefolklor/" target="_blank" rel="noopener" aria-label="Instagram">
+        <a href="https://www.instagram.com/yeditepe.halkoyunlari/" target="_blank" rel="noopener" aria-label="Instagram">
           <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
-        <a href="https://www.youtube.com/@yeditepefolklor" target="_blank" rel="noopener" aria-label="YouTube">
-          <svg viewBox="0 0 24 24"><path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/></svg>
-        </a>
-        <a href="tel:+905309525345" aria-label="Telefon">
+        <a href="tel:+905322010821" aria-label="Telefon">
           <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
         </a>
       </div>
