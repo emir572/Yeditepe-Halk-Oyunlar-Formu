@@ -13,7 +13,7 @@
   --yeditepe-red-light: #ff3370;
   --yeditepe-red-glow: rgba(254, 0, 73, 0.35);
 
-  --bg-dark: #0f0f1a;
+  --bg-dark: #090909;
   --bg-card: rgba(255, 255, 255, 0.95);
   --bg-card-glass: rgba(255, 255, 255, 0.08);
 
@@ -69,10 +69,10 @@ body {
   inset: 0;
   z-index: 0;
   background:
-    radial-gradient(ellipse at 20% 50%, rgba(254, 0, 73, 0.15) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(254, 0, 73, 0.08) 0%, transparent 50%),
-    radial-gradient(ellipse at 50% 100%, rgba(100, 0, 30, 0.2) 0%, transparent 60%),
-    linear-gradient(180deg, #0f0f1a 0%, #1a0a12 50%, #0f0f1a 100%);
+    radial-gradient(ellipse at 20% 50%, rgba(200, 120, 30, 0.10) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(210, 130, 40, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%, rgba(160, 80, 10, 0.12) 0%, transparent 60%),
+    linear-gradient(180deg, #090909 0%, #110e06 50%, #090909 100%);
 }
 
 .page-background::before {
@@ -87,7 +87,7 @@ body {
 .particle {
   position: fixed;
   border-radius: 50%;
-  background: var(--yeditepe-red);
+  background: #c87828;
   opacity: 0;
   pointer-events: none;
   z-index: 0;
@@ -165,16 +165,22 @@ body {
   animation-delay: 0.2s;
 }
 
-.form-header .logo {
-  width: 140px;
-  height: auto;
+.header-logo-wrapper {
   margin-bottom: 20px;
-  filter: drop-shadow(0 4px 12px rgba(254, 0, 73, 0.3));
-  transition: transform var(--transition-med);
+  display: flex;
+  justify-content: center;
 }
 
-.form-header .logo:hover {
+.header-logo-svg {
+  width: 260px;
+  height: auto;
+  filter: drop-shadow(0 4px 16px rgba(232, 131, 28, 0.30));
+  transition: transform var(--transition-med), filter var(--transition-med);
+}
+
+.header-logo-svg:hover {
   transform: scale(1.05);
+  filter: drop-shadow(0 6px 24px rgba(232, 131, 28, 0.45));
 }
 
 .form-header h1 {
@@ -805,8 +811,8 @@ input[type="date"].form-input:hover::-webkit-calendar-picker-indicator {
     letter-spacing: 1.5px;
   }
 
-  .form-header .logo {
-    width: 110px;
+  .header-logo-svg {
+    width: 210px;
   }
 
   .form-card-inner {
