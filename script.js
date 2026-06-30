@@ -264,7 +264,7 @@
       console.error('Gönderim hatası:', error);
       submitBtn.disabled = false;
       submitBtn.classList.remove('loading');
-      alert('Bir hata oluştu. Lütfen tekrar deneyin veya +90 530 952 53 45 numarasını arayın.');
+      alert('Bir hata oluştu. Lütfen tekrar deneyin veya 0532 201 08 21 numarasını arayın.');
     });
   });
 
