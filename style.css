@@ -171,14 +171,19 @@ body {
   justify-content: center;
 }
 
-.header-logo-svg {
-  width: 260px;
+.header-logo-img {
+  max-width: 180px;
   height: auto;
   filter: drop-shadow(0 4px 16px rgba(232, 131, 28, 0.30));
   transition: transform var(--transition-med), filter var(--transition-med);
 }
 
-.header-logo-svg:hover {
+.header-logo-wrapper a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header-logo-wrapper a:hover .header-logo-img {
   transform: scale(1.05);
   filter: drop-shadow(0 6px 24px rgba(232, 131, 28, 0.45));
 }
