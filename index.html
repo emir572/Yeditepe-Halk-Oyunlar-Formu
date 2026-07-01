@@ -43,81 +43,11 @@
 
     <!-- Header -->
     <header class="form-header">
-      <!-- Custom Header Logo (SVG) -->
+      <!-- Header Logo -->
       <div class="header-logo-wrapper">
-        <svg class="header-logo-svg" viewBox="0 -15 380 145" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Yeditepe Halk Oyunları Logo">
-          <defs>
-            <linearGradient id="logoGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#e8831c"/>
-              <stop offset="100%" stop-color="#c86a14"/>
-            </linearGradient>
-            <linearGradient id="logoGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#d47728"/>
-              <stop offset="100%" stop-color="#f0a040"/>
-            </linearGradient>
-            <linearGradient id="logoGrad3" x1="0%" y1="100%" x2="100%" y2="0%">
-              <stop offset="0%" stop-color="#c46018"/>
-              <stop offset="100%" stop-color="#e8931c"/>
-            </linearGradient>
-            <filter id="logoGlow">
-              <feGaussianBlur stdDeviation="1.5" result="blur"/>
-              <feMerge>
-                <feMergeNode in="blur"/>
-                <feMergeNode in="SourceGraphic"/>
-              </feMerge>
-            </filter>
-          </defs>
-
-          <g filter="url(#logoGlow)">
-            <!-- ===== Y FIGURE (x=55) — Arms up in V shape ===== -->
-            <circle cx="55" cy="18" r="7" fill="url(#logoGrad1)"/>
-            <path d="M55 25 L55 58" stroke="url(#logoGrad1)" stroke-width="3.5" stroke-linecap="round"/>
-            <path d="M55 34 Q42 20 33 10" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M55 34 Q68 20 77 10" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M55 58 Q49 68 42 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M55 58 Q64 66 72 72" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-            <!-- Halay connection Y → T -->
-            <path d="M77 10 Q93 22 105 34" stroke="url(#logoGrad2)" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.55"/>
-
-            <!-- ===== T FIGURE (x=140) — Arms horizontal ===== -->
-            <circle cx="140" cy="18" r="7" fill="url(#logoGrad1)"/>
-            <path d="M140 25 L140 58" stroke="url(#logoGrad1)" stroke-width="3.5" stroke-linecap="round"/>
-            <path d="M140 34 Q124 32 105 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M140 34 Q160 32 183 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M140 58 Q134 68 127 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M140 58 Q148 66 156 72" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-            <!-- ===== H FIGURE (x=225) — Wide stance + crossbar ===== -->
-            <circle cx="225" cy="18" r="7" fill="url(#logoGrad1)"/>
-            <path d="M225 25 L225 58" stroke="url(#logoGrad1)" stroke-width="3.5" stroke-linecap="round"/>
-            <path d="M225 34 Q208 32 183 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M225 34 Q244 32 268 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M210 46 L240 46" stroke="url(#logoGrad2)" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M225 58 Q213 68 200 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M225 58 Q237 68 250 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-            <!-- ===== O FIGURE (x=310) — Arms form circle above head ===== -->
-            <circle cx="310" cy="18" r="7" fill="url(#logoGrad1)"/>
-            <path d="M310 25 L310 58" stroke="url(#logoGrad1)" stroke-width="3.5" stroke-linecap="round"/>
-            <path d="M302 34 Q286 32 268 34" stroke="url(#logoGrad2)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M318 34 C348 -8 272 -8 302 34" stroke="url(#logoGrad2)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-            <path d="M310 58 Q303 68 296 76" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
-            <path d="M310 58 Q318 66 326 72" stroke="url(#logoGrad3)" stroke-width="3" fill="none" stroke-linecap="round"/>
-
-            <!-- Decorative energy dots -->
-            <circle cx="30" cy="6" r="2" fill="#f0a040" opacity="0.65"/>
-            <circle cx="80" cy="4" r="1.5" fill="#e8831c" opacity="0.45"/>
-            <circle cx="345" cy="10" r="2" fill="#f0a040" opacity="0.65"/>
-            <circle cx="268" cy="6" r="1.5" fill="#e8831c" opacity="0.45"/>
-          </g>
-
-          <!-- Text -->
-          <text x="190" y="105" text-anchor="middle" font-family="Poppins, sans-serif" font-size="26" font-weight="700" fill="url(#logoGrad2)" letter-spacing="2">
-            Yeditepe
-          </text>
-          <line x1="108" y1="113" x2="272" y2="113" stroke="url(#logoGrad2)" stroke-width="2" stroke-linecap="round" opacity="0.35"/>
-        </svg>
+        <a href="https://www.iyed.com.tr" target="_blank" rel="noopener" aria-label="Yeditepe - iyed.com.tr">
+          <img src="header-logo.png" alt="Yeditepe Halk Oyunları Logo" class="header-logo-img">
+        </a>
       </div>
       <h1>Yeditepe Ön Kayıt Formu</h1>
       <p class="subtitle">Yeditepe Halk Oyunları Kulübü</p>
